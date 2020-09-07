@@ -9,8 +9,11 @@ About imgix: imgix is an image optimization, management, & delivery API.  There'
 
 About this project: Creating an example blog page using imgix with an existing project on Contentstack and Nuxt.
 
+## What is imgix doing?
 
-![banner](https://images.contentstack.io/v3/assets/blt398b654a8f2799a0/blt81c0af7fab7c9254/5f476c18a5031b4a3bba90d3/nuxtjs-sample-app.png "banner")
+imgix is using their [Vue SDK](https://github.com/imgix/vue-imgix) to create responsive images.  In this example, imgix is also intelligently formatting the images, which is where the majority of the image weight savings is coming from.  For example, if an image is being view in Chrome/Firefox, it is converted to webp.  For other browsers, imgix is intelligently checking the image for transparent pixels, returning a png8 (or any format you prefer) for images requiring transparency and pjpgs for non-transparent image types.
+
+imgix is also ensuring images are not being incorrectly cropped. In this example, I am specifically retaining the aspect ratio of images but forcing them all to be 360 x 270 (in the blog preview images), then if the aspect ratio is different I fill in that additional space with the same background color matching the website. This ensures the blog images look similar in size but do not get skewed during any cropping.
 
 
 ## Live Demo
