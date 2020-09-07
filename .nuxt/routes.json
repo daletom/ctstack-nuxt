@@ -1,0 +1,16 @@
+[
+  {
+    "name": "blogs-blogpost",
+    "path": "/blogs/:blogpost?",
+    "component": "/Users/tom/Documents/GitHub3/ctstack-nuxt/pages/blogs/_blogpost.vue",
+    "chunkName": "pages/blogs/_blogpost",
+    "_name": "_63f8d926"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/tom/Documents/GitHub3/ctstack-nuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_42b7421c"
+  }
+]
